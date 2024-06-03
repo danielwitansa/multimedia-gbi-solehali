@@ -1,0 +1,145 @@
+.guidebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 84.5vh;
+}
+
+.guidebook-container {
+    height: auto ;
+}
+
+.guidebook h2{
+    display: block;
+    color: var(--fontcolor);
+    font-size: 4rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    width: auto;
+}
+
+.guidebook .guidebook-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    margin: 0;
+    margin-bottom: 8rem;
+}
+
+.guidebook-menu .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+    width: 20rem;
+    height: 12rem;
+    border-radius: 1rem;
+    background-color: #edf7f6;
+}
+
+.guidebook .guidebook-menu .menu-card p {
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+    width: 18rem;
+}
+
+.start p::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.1rem;
+    transform: scaleX(0);
+    border-bottom: 0.5rem solid #20639B;    
+    transition: 1s;
+}
+
+.device p::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.1rem;
+    transform: scaleX(0);
+    border-bottom: 0.5rem solid #3CAEA3;    
+    transition: 0.5s;
+}
+
+.sop p::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.1rem;
+    transform: scaleX(0);
+    border-bottom: 0.5rem solid #F6D55C;    
+    transition: 0.5s;
+}
+
+.propresenter p::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.1rem;
+    transform: scaleX(0);
+    border-bottom: 0.5rem solid #ED553B; 
+    transition: 0.5s;
+}
+
+.menu-card p:hover::after {
+    transform: scaleX(0.3);
+}
+
+.guidebook-page {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.guidebook-page .page {
+    display: block;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guidebook-routing {
+    display: block;
+    justify-content: center;
+    height: 100%;
+    margin-top: 8rem;
+}
+
+* {box-sizing: border-box;}
+
+.img-zoom-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.img-zoom-lens {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  /*set the size of the lens:*/
+  width: 100px;
+  height: 100px;
+}
+
+.img-zoom-result {
+  border: 2px solid #d4d4d4;
+  /*set the size of the result div:*/
+  width: 320px;
+  height: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.propresenter-guide .propresenter {
+    width: 100%;
+    height: 100vh;
+}

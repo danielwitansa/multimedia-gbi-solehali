@@ -1,0 +1,371 @@
+:root {
+    --primary: #a28089;
+    --bg2: #edf7f6;
+    --bg: #1a1a1a;
+    --fontcolor: #fdfdfd;
+    --blue: var(#20639B);
+    --tosca: var(#3CAEA3);
+    --yellow: var(#F6D55C);
+    --red: var(#ED553B);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: var(--fontcolor);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 1.5rem 7%;
+    backdrop-filter: blur(6px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25));
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.guidebook-nav {
+    position: relative;
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .navbar-logo img {
+    width: 50px;
+    height: 50px;
+    padding: 0rem;
+}
+
+.navbar .navbar-logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--fontcolor);
+    padding: 0 1rem;
+}
+
+.navbar .navbar-nav a {
+    color: var(--fontcolor);
+    display: inline-block;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.1rem solid var(--fontcolor);
+    transform: scaleX(0);
+    transition: 0.5s;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.banner {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner .content {
+    padding: 0rem 7%;
+    max-width: 70rem;
+    color: var(--bg2);
+}
+
+.banner .content h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px;
+    max-width: 45rem;
+    line-height: 1.25;
+}
+
+.banner .content p {
+    font-size: 1rem;
+    font-weight: 100;
+    text-shadow: 2px;
+    padding-top: 1rem;
+    line-height: 1.5;
+    max-width: 45rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 7%;
+    margin-top: 5rem;
+    }
+
+.member {
+    height: auto;
+}
+
+.section-title {
+    display: block;
+    color: var(--fontcolor);
+    font-size: 4rem;
+    margin-top: 8rem;
+    margin-bottom: 0rem;
+    text-align: center;
+    width: auto;
+}
+
+.member-card {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #edf7f6;
+    border-radius: 1rem;
+    margin: 1rem 1rem;
+}
+
+.member-card img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 0.5rem;  
+}
+
+.member-card-text {
+    display: block;
+    text-align: left;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.member-card-text h3 {
+    color: #080808;
+    font-size: 1.5rem;
+    max-width: 18rem;
+    width: 18rem;
+}
+
+.member-card-text p {
+    color: #080808;
+    max-width: 18rem;
+    width: 18rem;
+    max-height: 4.5rem;
+}
+
+.dash {
+    display: block;
+    width: 100%;
+    transform: scaleX(0.1);
+    margin-bottom: 4rem;
+}
+
+.dash-member {
+    border-top: 1rem solid #ED553B;
+}
+
+.dash-visimisi {
+    border-top: 1rem solid #F6D55C;
+}
+
+.dash-history {
+    border-top: 1rem solid #3CAEA3;
+}
+
+.dash-contact {
+    border-top: 1rem solid #20639B;
+}
+
+.contact {
+    height: auto;
+}
+
+.container-visimisi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 7%;
+}
+
+.card-visimisi {
+    width: 20rem;
+    height: 30rem;
+    background-color: #edf7f6;
+    border-radius: 1rem;
+    margin: 0 2rem;
+    padding: 2rem;
+}
+
+.card-visimisi h3 {
+    color: #080808;
+    font-size: 2rem;
+    max-width: 16rem;
+    width: 18rem;
+    text-align: center;
+}
+
+.card-visimisi p {
+    color: #080808;
+    font-size: 1.5rem;
+    max-width: 16rem;
+    text-align: left;
+}
+
+.container-history {
+    display: flex;
+    align-items: center;
+    background-color: #edf7f6;
+    margin: 0 7%;
+}
+
+.history .container-history img {
+    width: 350px;
+    height: auto;
+}
+
+.container-history p {
+    display: block;
+    justify-content: left;
+    margin: 3rem;
+    height: 100%;
+    text-align: justify;
+    max-width: 100%;
+    color: #080808;
+}
+
+.contact .row .socialmedia-card {
+    text-align: center;
+    width: 30rem;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.socialmedia-icon {
+    fill: var(--fontcolor);
+    width: 8rem;
+    height: 8rem;
+}
+
+.socialmedia-card .socialmedia-title {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--fontcolor);
+}
+
+.row-contact {
+    margin-top: 5rem;
+    margin-bottom: 20rem;
+}
+
+.course {
+    display: block;
+}
+
+.vid {
+    max-width: 100%;
+}
+
+.course-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+}
+
+.vid .course-card h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    max-width: 480px;
+    color: #080808;
+    text-align: center;
+}
+
+iframe {
+    border-radius: 0.5rem;
+}
+
+.course-card {
+    margin: 0rem 1.5rem 3rem 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(6px);
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg2);
+}
+
+.container-footer-row {
+    display: flex;
+    justify-content: center;
+    background-color: #ED553B;
+    height: auto;
+    padding: 1rem;
+}
+
+#footer-copyright {
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: var(--fontcolor);
+}
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 1366px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}
